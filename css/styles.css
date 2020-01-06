@@ -5,10 +5,40 @@ body {
 }
 
 header {
-    background-color: #efefef;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    background-color: #4682b4;
+    height: calc(30px + 3vw);
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+header > a {
+    padding-left: 30px;
+    color: white;
+    text-decoration: none;
+}
 
+.header-icon {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 30px;:
+}
+.header-icon img {
+    height: 40px;
+    padding-left: 40px;
+}
+
+.milkey {
+    padding-top: 120px;
+    background-image: url(../img/milkey.jpg);
+    background-size: cover;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
+
+.milkey h1 {
+    margin: auto;
 }
 .icon img {
     border-radius: 50%;
@@ -16,14 +46,17 @@ header {
     border-color: white;
     border-style: solid;
 }
-.container {
-     width:400px;
+.profile {
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
+    padding: 20px;
      margin: auto;
      display: flex;
      align-items: center;
 }
 
 .info {
+    width: 70%;
     margin-left: 32px;
 }
 
@@ -35,30 +68,29 @@ header {
 
 .info p {
     margin: 0;
+    margin-top: 20px;
     margin-bottom: 16px;
-}
-
-.info ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    display: flex;
-}
-.info ul li {
-    margin-right: 8px;
 }
 .works {
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    /* text-align: center; */
 }
 
 .works > h1 {
     font-weight: normal;
     font-size: 24px;
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.work-img {
+    text-align: center;
+}
+.work-img img {
+    height: 60px;
+
 }
 
 .works > section {
@@ -67,11 +99,32 @@ header {
 
 .works > section > h1 {
     font-weight: normal;
+    text-align: center;
+}
+.works > section >h3 {
+    font-weight: normal;
+    text-align: center;
 }
 .works > section > p {
     line-height: 1.8;
 }
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+table th,table td{
+  padding: 10px 0;
+  text-align: center;
+}
+
+table tr:nth-child(odd){
+  background-color: #eee
+}
+footer {
+    margin-top: 20px;
+}
 footer p {
     text-align: center;
     font-size: 14px;
